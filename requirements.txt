@@ -1,0 +1,33 @@
+# Core numerical and image processing dependencies
+numpy
+scipy
+pandas
+openpyxl
+Pillow
+opencv-python
+tifffile
+tqdm
+
+# PyTorch stack
+# Install the torch/torchvision build that matches your CUDA version:
+# https://pytorch.org/get-started/locally/
+torch
+torchvision
+tensorboard
+
+# Model/training utilities
+timm==0.3.2
+scikit-learn
+yacs
+
+# Optional experiment/output helpers retained for compatibility
+dominate
+wandb
+
+# Optional utilities used by helper scripts
+matplotlib
+scikit-image
+pypinyin
+requests
+beautifulsoup4
+submitit

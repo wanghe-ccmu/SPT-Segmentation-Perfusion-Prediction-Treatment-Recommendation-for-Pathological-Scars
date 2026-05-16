@@ -1,0 +1,63 @@
+# Python cache/build artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# IDE/OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs and experiment trackers
+*.log
+events.out.tfevents.*
+runs/
+wandb/
+
+# Model checkpoints and large binaries
+*.pth
+*.pt
+*.ckpt
+*.onnx
+weights/
+ckpt/
+checkpoints/
+checkpoints/perfusion_gan/
+output_dir*/
+
+# Generated pipeline outputs
+data/crop_result/
+data/seg_result/
+data/fuse_result/
+data/perfusion_result/
+data/perfusion_pair_input/test/
+reports/
+prospective/crop_result/
+prospective/gan_result/
+prospective/perfusion_result/
+
+# Local/private data files
+*.xlsx
+*.xls
+*.csv
+*.npy
+data/raw_data/
+mae/perspective/
+mae/prospective/
+
+# Keep repository placeholders if added later
+!.gitkeep
