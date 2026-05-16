@@ -57,6 +57,20 @@ The repository includes one example test photograph:
 data/raw_data/IMG_1794.png
 ```
 
+## Example Result
+
+The example case below illustrates the SPT inference workflow from the input
+clinical photograph to lesion cropping, segmentation overlay, and predicted
+blood perfusion.
+
+| Clinical photograph | Cropped lesion |
+| --- | --- |
+| ![Clinical photograph](data/raw_data/IMG_1794.png) | ![Cropped lesion](data/crop_result/IMG_1794.png) |
+
+| Segmentation overlay | Predicted blood perfusion |
+| --- | --- |
+| ![Segmentation overlay](data/fuse_result/IMG_1794.png) | ![Predicted blood perfusion](data/perfusion_result/IMG_1794.png) |
+
 Important default checkpoint files:
 
 ```text

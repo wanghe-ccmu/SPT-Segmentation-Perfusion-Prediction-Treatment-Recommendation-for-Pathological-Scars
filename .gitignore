@@ -40,10 +40,13 @@ checkpoints/perfusion_gan/
 output_dir*/
 
 # Generated pipeline outputs
-data/crop_result/
+data/crop_result/*
+!data/crop_result/IMG_1794.png
 data/seg_result/
-data/fuse_result/
-data/perfusion_result/
+data/fuse_result/*
+!data/fuse_result/IMG_1794.png
+data/perfusion_result/*
+!data/perfusion_result/IMG_1794.png
 data/perfusion_pair_input/test/
 reports/
 prospective/crop_result/
