@@ -55,7 +55,8 @@ prospective/perfusion_result/
 *.xls
 *.csv
 *.npy
-data/raw_data/
+data/raw_data/*
+!data/raw_data/IMG_1794.png
 mae/perspective/
 mae/prospective/
 

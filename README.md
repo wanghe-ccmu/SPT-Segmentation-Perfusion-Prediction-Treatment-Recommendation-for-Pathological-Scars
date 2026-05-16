@@ -51,6 +51,12 @@ weights/blood_perfusion/               blood perfusion generator checkpoint
 weights/treatment_classification/      Transformer treatment classifier weights
 ```
 
+The repository includes one example test photograph:
+
+```text
+data/raw_data/IMG_1794.png
+```
+
 Important default checkpoint files:
 
 ```text
