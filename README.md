@@ -63,13 +63,33 @@ The example case below illustrates the SPT inference workflow from the input
 clinical photograph to lesion cropping, segmentation overlay, and predicted
 blood perfusion.
 
-| Clinical photograph | Cropped lesion |
-| --- | --- |
-| ![Clinical photograph](data/raw_data/IMG_1794.png) | ![Cropped lesion](data/crop_result/IMG_1794.png) |
+<table>
+  <tr>
+    <th>Clinical photograph</th>
+    <th>Cropped lesion</th>
+  </tr>
+  <tr>
+    <td><img src="data/raw_data/IMG_1794.png" alt="Clinical photograph" width="260" height="260"></td>
+    <td><img src="data/crop_result/IMG_1794.png" alt="Cropped lesion" width="260" height="260"></td>
+  </tr>
+  <tr>
+    <th>Segmentation overlay</th>
+    <th>Predicted blood perfusion</th>
+  </tr>
+  <tr>
+    <td><img src="data/fuse_result/IMG_1794.png" alt="Segmentation overlay" width="260" height="260"></td>
+    <td><img src="data/perfusion_result/IMG_1794.png" alt="Predicted blood perfusion" width="260" height="260"></td>
+  </tr>
+</table>
 
-| Segmentation overlay | Predicted blood perfusion |
-| --- | --- |
-| ![Segmentation overlay](data/fuse_result/IMG_1794.png) | ![Predicted blood perfusion](data/perfusion_result/IMG_1794.png) |
+Example prediction:
+
+```text
+Case: IMG_1794.png
+Recommended treatment class: Aggressive
+Conservative probability: 0.000695
+Aggressive probability: 0.999305
+```
 
 Important default checkpoint files:
 
