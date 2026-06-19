@@ -51,44 +51,60 @@ weights/blood_perfusion/               blood perfusion generator checkpoint
 weights/treatment_classification/      Transformer treatment classifier weights
 ```
 
-The repository includes one example test photograph:
+Download the required model weights from
+[Google Drive](https://drive.google.com/drive/folders/14ghEXUAYcL1M4Q6Q0kFLfFTIwK-PbYfI?usp=drive_link),
+then place the downloaded files under the corresponding `weights/`
+subdirectories shown above.
+
+The repository includes two example test photographs:
 
 ```text
-data/raw_data/IMG_1794.png
+data/raw_data/case1.png
+data/raw_data/case3.png
 ```
 
 ## Example Result
 
-The example case below illustrates the SPT inference workflow from the input
+The example cases below illustrate the SPT inference workflow from the input
 clinical photograph to lesion cropping, segmentation overlay, and predicted
 blood perfusion.
 
 <table>
   <tr>
+    <th>Case</th>
     <th>Clinical photograph</th>
     <th>Cropped lesion</th>
-  </tr>
-  <tr>
-    <td><img src="data/raw_data/IMG_1794.png" alt="Clinical photograph" width="260" height="260"></td>
-    <td><img src="data/crop_result/IMG_1794.png" alt="Cropped lesion" width="260" height="260"></td>
-  </tr>
-  <tr>
     <th>Segmentation overlay</th>
     <th>Predicted blood perfusion</th>
   </tr>
   <tr>
-    <td><img src="data/fuse_result/IMG_1794.png" alt="Segmentation overlay" width="260" height="260"></td>
-    <td><img src="data/perfusion_result/IMG_1794.png" alt="Predicted blood perfusion" width="260" height="260"></td>
+    <td>case1.png</td>
+    <td><img src="data/raw_data/case1.png" alt="case1 clinical photograph" width="160"></td>
+    <td><img src="data/crop_result/case1.png" alt="case1 cropped lesion" width="160"></td>
+    <td><img src="data/fuse_result/case1.png" alt="case1 segmentation overlay" width="160"></td>
+    <td><img src="data/perfusion_result/case1.png" alt="case1 predicted blood perfusion" width="160"></td>
+  </tr>
+  <tr>
+    <td>case3.png</td>
+    <td><img src="data/raw_data/case3.png" alt="case3 clinical photograph" width="160"></td>
+    <td><img src="data/crop_result/case3.png" alt="case3 cropped lesion" width="160"></td>
+    <td><img src="data/fuse_result/case3.png" alt="case3 segmentation overlay" width="160"></td>
+    <td><img src="data/perfusion_result/case3.png" alt="case3 predicted blood perfusion" width="160"></td>
   </tr>
 </table>
 
-Example prediction:
+Example predictions:
 
 ```text
-Case: IMG_1794.png
+Case: case1.png
+Recommended treatment class: Conservative
+Conservative probability: 0.999363
+Aggressive probability: 0.000637
+
+Case: case3.png
 Recommended treatment class: Aggressive
-Conservative probability: 0.000695
-Aggressive probability: 0.999305
+Conservative probability: 0.000663
+Aggressive probability: 0.999337
 ```
 
 Important default checkpoint files:

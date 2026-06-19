@@ -41,12 +41,15 @@ output_dir*/
 
 # Generated pipeline outputs
 data/crop_result/*
-!data/crop_result/IMG_1794.png
+!data/crop_result/case1.png
+!data/crop_result/case3.png
 data/seg_result/
 data/fuse_result/*
-!data/fuse_result/IMG_1794.png
+!data/fuse_result/case1.png
+!data/fuse_result/case3.png
 data/perfusion_result/*
-!data/perfusion_result/IMG_1794.png
+!data/perfusion_result/case1.png
+!data/perfusion_result/case3.png
 data/perfusion_pair_input/test/
 reports/
 prospective/crop_result/
@@ -59,7 +62,8 @@ prospective/perfusion_result/
 *.csv
 *.npy
 data/raw_data/*
-!data/raw_data/IMG_1794.png
+!data/raw_data/case1.png
+!data/raw_data/case3.png
 mae/perspective/
 mae/prospective/
 
